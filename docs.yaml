@@ -1,0 +1,101 @@
+openapi: 3.0.1
+info:
+  title: Budget Recommender API
+  description: API for the Budget Recommender application
+  version: 1.0.0
+servers:
+  - url: https://api.example.com
+
+paths:
+  /getcountries:
+    get:
+      summary: Get list of countries
+      description: Get a list of countries that are available for the budget recommender
+      operationId: ''
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /getbudget:
+    get:
+      summary: Get countries for a given budget
+      description: Get a list of countries that are available for the budget recommender
+      operationId: ''
+      parameters:
+        - name: budget
+          in: query
+          description: The budget to use for the recommendation
+          required: true
+          schema:
+            type: integer
+            minimum: 0
+            maximum: 100000
+      responses:
+          '200':
+            description: OK
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Country'
+  /getdestination:
+    get:
+      summary: Get a destination for a given budget
+      description: Get a destination that is available for the budget recommender
+      operationId: ''
+      parameters:
+        - name: country
+          in: query
+          description: The country to use for the recommendation
+          required: true
+          schema:
+            type: string
+      responses:
+            '200':
+                description: OK
+                content:
+                  application/json:
+                      schema:
+                        $ref: '#/components/schemas/Country'
+
+components:
+  schemas:
+    Country:
+      type: object
+      properties:
+        name:
+          type: string
+        capital:
+          type: string
+        countryCode:
+          type: string
+        currency:
+          type: string
+        flag:
+          type: string
+        language:
+          type: string
+        hotelAveragePrice:
+          type: integer
+        flightAveragePrice:
+            type: integer
+        description:
+            type: string
+        mealDB:
+            type: string
+        meals:
+            type: array
+            items:
+                type: object
+        weather:
+            type: array
+            items:
+                type: object
+        currencyRate:
+            type: number

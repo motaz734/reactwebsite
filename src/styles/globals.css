@@ -1,0 +1,464 @@
+@import url('https://fonts.cdnfonts.com/css/coolvetica-2');
+
+.landing-div, .about-div, .search-div {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(117.21deg, rgba(161, 238, 129, 0.2) 17.49%, rgba(234, 199, 54, 0.194) 96.75%), #D9D9D9;
+}
+
+.navbar-item {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #ffffff;
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 4rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.navbar-link:hover {
+    color: #25464E;
+}
+
+.home-img {
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+
+    left: 8%;
+    top: 35vh;
+}
+
+.start-btn {
+    width: 15vw;
+    height: 7.5vh;
+    background: #25464E;
+    border: 0;
+
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    left: 40%;
+    top: 70vh;
+
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.start-btn:hover {
+    background: #14282c;
+    color: #FFFFFF;
+}
+
+.about-title {
+    width: 100%;
+    padding-top: 15vh;
+
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.about-card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.about-card {
+    width: 30vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+
+}
+
+.about-card-title {
+    width: 100%;
+    padding: 2vh 2vw;
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    background: #C7DDCC;
+    border-radius: 12px 12px 0px 0px;
+    color: #212529;
+}
+
+.about-card-text {
+    padding: 2vh 2vw;
+    width: 100%;
+    height: 17.5vh;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #68717A;
+}
+
+.about-btn {
+    width: 15vw;
+    height: 7.5vh;
+    background: #25464E;
+    border: 0;
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    margin-top: 5vh;
+    position: relative;
+    left: 42.5vw;
+
+    color: #FFFFFF;
+
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.about-btn:hover {
+    background: #14282c;
+    color: #FFFFFF;
+}
+
+.search-title {
+    width: 100%;
+    padding-top: 5vh;
+
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.search-card {
+    background: #25464E;
+    height: 46rem;
+}
+
+.search-card-body {
+    background: white;
+    width: 70vw;
+    height: 30vh;
+    margin: 20vh auto 0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2vh 2vw;
+}
+
+.search-btn {
+    width: 15vw;
+    height: 5vh;
+    background: #25464E;
+    border: 0;
+
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.search-btn:hover {
+    background: #14282c;
+    color: #FFFFFF;
+}
+
+.location-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.location-search-input {
+    width: 20vw;
+    height: 5vh;
+    background: #FFFFFF;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 15px;
+
+    color: #68717A;
+}
+
+.result-card {
+    background: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.result-card-body {
+    background: rgba(199, 221, 204, 0.5);
+    width: 40vw;
+    height: 90vh;
+    margin: 5vh 0 5vh auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.result-card-title {
+    width: 100%;
+    padding: 2vh 2vw;
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-card-title-text {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    margin: 0;
+}
+
+.result-card-title-subtext {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.result-card-weather-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12.5%;
+    width: 90%;
+    background: #25464E;
+}
+
+.result-card-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-radius: 12px;
+    padding: 2vh 2vw;
+}
+
+.result-card-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.result-card-stat-text {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-left: 2vw;
+}
+
+.result-card-description {
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+.result-card-data {
+    width: 55vw;
+    height: 90vh;
+    margin: 5vh auto 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.result-card-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.result-card-weather-text {
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.result-card-meals {
+    width: 100%;
+    /*height: 49.5%;*/
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 100%;
+    align-items: center;
+    background: #25464E;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    overflow: auto;
+}
+
+.result-card-meal {
+    /*height: 90%;*/
+    cursor: pointer;
+    height: calc(20% + 300px);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5vh 0.5vw;
+    padding-top: 2vh;
+
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.result-card-meal:hover {
+    background: #14282c;
+}
+
+.result-card-meal-name {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #fff;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 60vh;
+    width: 100%;
+    background: #25464E;
+}
+
+.search-results-title {
+    margin-left: 5vw;
+    font-family: 'Coolvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.search-results-card-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 15vh;
+    background: #FFFFFF;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    margin: 0 1vw;
+    padding: 2vh 2vw;
+    border-radius: 12px;
+
+    background: #C7DDCC;
+
+    cursor: pointer;
+}
+
+.result-card-flag {
+
+    height: 72.5%;
+    /*border-radius: 12px;*/
+}
+
+.result-card-name {
+    font-family: 'Coolvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #000000;
+}
